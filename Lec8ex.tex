@@ -1,0 +1,74 @@
+\documentclass[10pt,CCT]{ctexart}
+\textheight=23cm \textwidth=16cm \oddsidemargin .5cm \topmargin
+-2cm
+
+
+
+
+\setlength{\parindent}{2\ccwd}          %段落首行缩进量 \ccwd表示一个汉定的宽度
+\setlength{\parskip}{2pt plus1pt minus1pt}  %段落之间的竖直距离
+\setlength{\baselineskip}{20pt plus2pt minus1pt}%段落内的行距
+\setlength{\textheight}{22true cm}      %每页上的文本总高度
+\setlength{\textwidth}{15true cm}     %每页上的文本总宽度
+
+\newcommand{\beq}{\begin{eqnarray}}
+\newcommand{\eeq}{\end{eqnarray}}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bq}{\begin{eqnarray*}}
+\newcommand{\eq}{\end{eqnarray*}}
+
+\newcommand{\D}{\scriptscriptstyle}
+\newtheorem{lemma}{{\heiti 引理}}
+\newtheorem{theorem}{{\heiti 定理}}
+\newtheorem {definition}{{\heiti 定义}}
+\newtheorem{corollary}{{\heiti 推论}}
+\newtheorem{prob}{~}
+
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\renewcommand{\thetheorem}{\thesection.\arabic{theorem}}
+\renewcommand{\thecorollary}{\thesection.\arabic{corollary}}
+\renewcommand{\thedefinition}{\thesection.\arabic{definition}}
+\renewcommand{\thelemma}{\thesection.\arabic{lemma}}
+
+%生成标题，即使上面几条标题命令的定义生效
+
+\begin{document}%
+
+\title{Lec8: 作业题目}
+ \date{\today}%
+
+\maketitle
+\thispagestyle{empty}
+\begin{prob}\rm
+使用Metropolis-Hastings算法从Cauchy分布中抽样, 在丢弃开始的1000个burnin样本后, 比较其
+百分位数与理论的百分位数(qcauchy或者qt).
+\end{prob}
+
+\begin{prob}\rm
+考虑\emph{pumps}数据(10个电厂泵, $t_i$: 泵的运行时间(单位, 1000小时), $y_i$: 失效次数), 
+使用MCMC算法对下述三种模型, 用后验均值估计$\alpha,\beta$:
+
+$y_i\sim Poisson(\lambda_i)$, 以及
+
+模型1: $log(\lambda_i)=\alpha+\beta t_i$.
+
+模型2: $log(\lambda_i)=\alpha+\beta log(t_i)$.
+
+模型3: $\lambda_i=\theta_it_i, \theta_i\sim Gamma(\alpha,\beta)$.
+
+\end{prob}
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
