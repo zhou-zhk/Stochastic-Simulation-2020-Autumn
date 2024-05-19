@@ -1,5 +1,5 @@
 ###########################
-# Chapter 1 - Introduction
+# Chapter 1 - Introduction (line 1 - 250)
 ###########################
 
 x = c(109, 65, 22, 3, 1)
@@ -250,7 +250,7 @@ cor(law$LSAT, law$GPA)
 ls()
 
 ###############################
-# Chapter 2 - Quantitative Data
+# Chapter 2 - Quantitative Data (line 253 - 465)
 ###############################
 
 library(MASS) #load the package
