@@ -466,7 +466,7 @@ log(mammals)[c(22, 28), ]
 
 
 ##########################################
-#  Chapter 3 - Categorical Data
+#  Chapter 3 - Categorical Data (line 469 - 600)
 ##########################################
 
 tosses = scan(what="character")
@@ -600,7 +600,7 @@ mosaicplot(T2, shade=FALSE)
 mosaicplot(T2, shade=TRUE)
 
 ##########################################
-#  Chapter 4 - Presentation Graphics
+#  Chapter 4 - Presentation Graphics (line 603 - 794)
 ##########################################
 
 hitting.data = read.table("batting.history.txt", header=TRUE,
