@@ -794,7 +794,7 @@ color = Gender, shape = Gender))
 p + geom_point(size = 4) + geom_smooth()
 
 ##################################################
-#  Chapter 5 - Exploratory Data Analysis
+#  Chapter 5 - Exploratory Data Analysis (line 797 - 884)
 ##################################################
 
 dat = read.table("college.txt", header=TRUE, sep="\t")
