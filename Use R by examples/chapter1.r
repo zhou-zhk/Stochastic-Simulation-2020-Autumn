@@ -884,7 +884,7 @@ boxplot(froot ~ Tier, data=college34, horizontal=TRUE,
 xlab="Froot(Top 10 Pct)", ylab="Tier")
 
 ##################################################
-#  Chapter 6 - Basic Inference Methods
+#  Chapter 6 - Basic Inference Methods (line 887 - 1006)
 ##################################################
 
 sleep = c(7.75, 8.5, 8, 6, 8, 6.33, 8.17, 7.75,
