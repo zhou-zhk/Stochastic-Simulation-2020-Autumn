@@ -5,11 +5,11 @@
 
 
 
-\setlength{\parindent}{2\ccwd}          %¶ÎÂäÊ×ĞĞËõ½øÁ¿ \ccwd±íÊ¾Ò»¸öºº¶¨µÄ¿í¶È
-\setlength{\parskip}{2pt plus1pt minus1pt}  %¶ÎÂäÖ®¼äµÄÊúÖ±¾àÀë
-\setlength{\baselineskip}{20pt plus2pt minus1pt}%¶ÎÂäÄÚµÄĞĞ¾à
-\setlength{\textheight}{22true cm}      %Ã¿Ò³ÉÏµÄÎÄ±¾×Ü¸ß¶È
-\setlength{\textwidth}{15true cm}     %Ã¿Ò³ÉÏµÄÎÄ±¾×Ü¿í¶È
+\setlength{\parindent}{2\ccwd}          %æ®µè½é¦–è¡Œç¼©è¿›é‡ \ccwdè¡¨ç¤ºä¸€ä¸ªæ±‰å®šçš„å®½åº¦
+\setlength{\parskip}{2pt plus1pt minus1pt}  %æ®µè½ä¹‹é—´çš„ç«–ç›´è·ç¦»
+\setlength{\baselineskip}{20pt plus2pt minus1pt}%æ®µè½å†…çš„è¡Œè·
+\setlength{\textheight}{22true cm}      %æ¯é¡µä¸Šçš„æ–‡æœ¬æ€»é«˜åº¦
+\setlength{\textwidth}{15true cm}     %æ¯é¡µä¸Šçš„æ–‡æœ¬æ€»å®½åº¦
 
 \newcommand{\beq}{\begin{eqnarray}}
 \newcommand{\eeq}{\end{eqnarray}}
@@ -19,10 +19,10 @@
 \newcommand{\eq}{\end{eqnarray*}}
 
 \newcommand{\D}{\scriptscriptstyle}
-\newtheorem{lemma}{{\heiti ÒıÀí}}
-\newtheorem{theorem}{{\heiti ¶¨Àí}}
-\newtheorem {definition}{{\heiti ¶¨Òå}}
-\newtheorem{corollary}{{\heiti ÍÆÂÛ}}
+\newtheorem{lemma}{{\heiti å¼•ç†}}
+\newtheorem{theorem}{{\heiti å®šç†}}
+\newtheorem {definition}{{\heiti å®šä¹‰}}
+\newtheorem{corollary}{{\heiti æ¨è®º}}
 \newtheorem{prob}{~}
 
 \renewcommand{\theequation}{\thesection.\arabic{equation}}
@@ -31,31 +31,31 @@
 \renewcommand{\thedefinition}{\thesection.\arabic{definition}}
 \renewcommand{\thelemma}{\thesection.\arabic{lemma}}
 
-%Éú³É±êÌâ£¬¼´Ê¹ÉÏÃæ¼¸Ìõ±êÌâÃüÁîµÄ¶¨ÒåÉúĞ§
+% ç”Ÿæˆæ ‡é¢˜ï¼Œå³ä½¿ä¸Šé¢å‡ æ¡æ ‡é¢˜å‘½ä»¤çš„å®šä¹‰ç”Ÿæ•ˆ
 
 \begin{document}%
 
-\title{Lec8: ×÷ÒµÌâÄ¿}
+\title{Lec8: ä½œä¸šé¢˜ç›®}
  \date{\today}%
 
 \maketitle
 \thispagestyle{empty}
 \begin{prob}\rm
-Ê¹ÓÃMetropolis-HastingsËã·¨´ÓCauchy·Ö²¼ÖĞ³éÑù, ÔÚ¶ªÆú¿ªÊ¼µÄ1000¸öburninÑù±¾ºó, ±È½ÏÆä
-°Ù·ÖÎ»ÊıÓëÀíÂÛµÄ°Ù·ÖÎ»Êı(qcauchy»òÕßqt).
+ä½¿ç”¨Metropolis-Hastingsç®—æ³•ä»Cauchyåˆ†å¸ƒä¸­æŠ½æ ·, åœ¨ä¸¢å¼ƒå¼€å§‹çš„1000ä¸ªburninæ ·æœ¬å, æ¯”è¾ƒå…¶
+ç™¾åˆ†ä½æ•°ä¸ç†è®ºçš„ç™¾åˆ†ä½æ•°(qcauchyæˆ–è€…qt).
 \end{prob}
 
 \begin{prob}\rm
-¿¼ÂÇ\emph{pumps}Êı¾İ(10¸öµç³§±Ã, $t_i$: ±ÃµÄÔËĞĞÊ±¼ä(µ¥Î», 1000Ğ¡Ê±), $y_i$: Ê§Ğ§´ÎÊı), 
-Ê¹ÓÃMCMCËã·¨¶ÔÏÂÊöÈıÖÖÄ£ĞÍ, ÓÃºóÑé¾ùÖµ¹À¼Æ$\alpha,\beta$:
+è€ƒè™‘\emph{pumps}æ•°æ®(10ä¸ªç”µå‚æ³µ, $t_i$: æ³µçš„è¿è¡Œæ—¶é—´(å•ä½, 1000å°æ—¶), $y_i$: å¤±æ•ˆæ¬¡æ•°), 
+ä½¿ç”¨MCMCç®—æ³•å¯¹ä¸‹è¿°ä¸‰ç§æ¨¡å‹, ç”¨åéªŒå‡å€¼ä¼°è®¡$\alpha,\beta$:
 
-$y_i\sim Poisson(\lambda_i)$, ÒÔ¼°
+$y_i\sim Poisson(\lambda_i)$, ä»¥åŠ
 
-Ä£ĞÍ1: $log(\lambda_i)=\alpha+\beta t_i$.
+æ¨¡å‹1: $log(\lambda_i)=\alpha+\beta t_i$.
 
-Ä£ĞÍ2: $log(\lambda_i)=\alpha+\beta log(t_i)$.
+æ¨¡å‹2: $log(\lambda_i)=\alpha+\beta log(t_i)$.
 
-Ä£ĞÍ3: $\lambda_i=\theta_it_i, \theta_i\sim Gamma(\alpha,\beta)$.
+æ¨¡å‹3: $\lambda_i=\theta_it_i, \theta_i\sim Gamma(\alpha,\beta)$.
 
 \end{prob}
 
@@ -63,8 +63,6 @@ $y_i\sim Poisson(\lambda_i)$, ÒÔ¼°
 
 
 \end{document}
-
-
 
 
 
