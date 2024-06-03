@@ -9,3 +9,5 @@ v = sum(x * (k - r)^2) / 199  # variance
 print(r)
 print(v)
 f = dpois(k, r); print(cbind(k, p, f))
+
+# using language R 
