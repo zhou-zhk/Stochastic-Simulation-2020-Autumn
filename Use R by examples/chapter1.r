@@ -1006,7 +1006,7 @@ head(cbind(log.wages.low, log.wages.high))
 t.test(log.wages.low, log.wages.high, paired=TRUE)
 
 ###############################
-# Chapter 7 - Regression
+# Chapter 7 - Regression (line 1009 - 1138)
 ###############################
 
 attach(cars) #attach the data
