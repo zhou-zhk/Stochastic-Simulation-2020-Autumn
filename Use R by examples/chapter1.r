@@ -1669,7 +1669,7 @@ mu = exp(sim.fit$S[ ,2])
 quantile(mu, c(0.05, 0.95))
 
 ##################################################
-#  Chapter 13 - Monte Carlo Methods
+#  Chapter 13 - Monte Carlo Methods (line 1672 -1863)
 ##################################################
 
 sam = runif(1000, 10, 11.5)
